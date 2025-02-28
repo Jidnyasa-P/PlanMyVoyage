@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan my Voyage | Travel & Tourism</title>
+  <meta name="description" content="Discover the world with personalized travel experiences tailored to your preferences.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Plan my Voyage</span>
+      </div>
+      <nav class="nav-desktop">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn-primary">Book Now</button>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-container">
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Discover the World with Us</h1>
+          <p>Personalized travel experiences tailored to your preferences. Let us plan your perfect voyage.</p>
+          <div class="search-container">
+            <div class="search-row">
+              <div class="search-input">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="Where to?">
+              </div>
+              <div class="search-input">
+                <i class="fas fa-calendar"></i>
+                <input type="date" placeholder="When?">
+              </div>
+              <button class="btn btn-primary search-btn">
+                <i class="fas fa-search"></i> Find Your Adventure
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations">
+      <div class="container">
+        <div class="section-header">
+          <h2>Recommended Destinations</h2>
+          <p>Explore our handpicked selection of breathtaking destinations around the world</p>
+        </div>
+
+        <div class="tabs">
+          <div class="tab-list">
+            <button class="tab-btn active" data-tab="popular">Popular</button>
+            <button class="tab-btn" data-tab="beaches">Beaches</button>
+            <button class="tab-btn" data-tab="mountains">Mountains</button>
+            <button class="tab-btn" data-tab="cities">Cities</button>
+          </div>
+          
+          <div class="tab-content active" id="popular">
+            <div class="destination-grid">
+              <!-- Popular Destinations -->
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Santorini" alt="Santorini">
+                  <div class="destination-badge">Island</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Santorini</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Greece</span>
+                    </div>
+                  </div>
+                  <p>Experience the breathtaking views of white-washed buildings against the blue Aegean Sea.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1299 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Kyoto" alt="Kyoto">
+                  <div class="destination-badge">Cultural</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Kyoto</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Japan</span>
+                    </div>
+                  </div>
+                  <p>Discover ancient temples, traditional gardens, and the beauty of cherry blossoms.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1499 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Bali" alt="Bali">
+                  <div class="destination-badge">Tropical</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Bali</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Indonesia</span>
+                    </div>
+                  </div>
+                  <p>Relax on pristine beaches, explore lush rice terraces, and immerse in Balinese culture.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1099 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="beaches">
+            <div class="destination-grid">
+              <!-- Beach Destinations -->
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Maldives" alt="Maldives">
+                  <div class="destination-badge">Luxury</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Maldives</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Indian Ocean</span>
+                    </div>
+                  </div>
+                  <p>Crystal clear waters, overwater bungalows, and unparalleled marine life.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1899 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Tulum" alt="Tulum">
+                  <div class="destination-badge">Beach</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Tulum</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Mexico</span>
+                    </div>
+                  </div>
+                  <p>Ancient ruins overlooking pristine beaches with a vibrant local culture.</p>
+                  <div class="destination-footer">
+                    <span class="price">$999 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Amalfi" alt="Amalfi Coast">
+                  <div class="destination-badge">Coastal</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Amalfi Coast</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Italy</span>
+                    </div>
+                  </div>
+                  <p>Dramatic coastline with colorful villages perched on cliffs above the sea.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1399 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="mountains">
+            <div class="destination-grid">
+              <!-- Mountain Destinations -->
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Swiss+Alps" alt="Swiss Alps">
+                  <div class="destination-badge">Alpine</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Swiss Alps</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Switzerland</span>
+                    </div>
+                  </div>
+                  <p>Majestic mountain peaks, charming villages, and world-class skiing.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1599 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Patagonia" alt="Patagonia">
+                  <div class="destination-badge">Adventure</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Patagonia</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Argentina/Chile</span>
+                    </div>
+                  </div>
+                  <p>Dramatic landscapes with glaciers, mountains, and pristine wilderness.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1799 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Banff" alt="Banff">
+                  <div class="destination-badge">National Park</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Banff</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Canada</span>
+                    </div>
+                  </div>
+                  <p>Stunning mountain scenery with turquoise lakes and abundant wildlife.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1299 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="cities">
+            <div class="destination-grid">
+              <!-- City Destinations -->
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Paris" alt="Paris">
+                  <div class="destination-badge">Urban</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Paris</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>France</span>
+                    </div>
+                  </div>
+                  <p>The city of lights with iconic landmarks, world-class cuisine, and romantic ambiance.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1199 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=New+York" alt="New York">
+                  <div class="destination-badge">Metropolitan</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>New York</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>USA</span>
+                    </div>
+                  </div>
+                  <p>The city that never sleeps, with skyscrapers, Broadway shows, and diverse neighborhoods.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1299 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="destination-card">
+                <div class="destination-img">
+                  <img src="https://via.placeholder.com/600x400?text=Barcelona" alt="Barcelona">
+                  <div class="destination-badge">Coastal City</div>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-header">
+                    <h3>Barcelona</h3>
+                    <div class="destination-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Spain</span>
+                    </div>
+                  </div>
+                  <p>Unique architecture, vibrant street life, and beautiful Mediterranean beaches.</p>
+                  <div class="destination-footer">
+                    <span class="price">$1099 <span class="per-person">/ person</span></span>
+                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>Why Choose Us?</h2>
+            <p>At Plan my Voyage, we believe that travel should be transformative, enriching, and tailored to your unique preferences.</p>
+            
+            <div class="features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Personalized Itineraries</h3>
+                  <p>Custom travel plans designed around your interests and preferences.</p>
+                </div>
+              </div>
+              
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-calendar"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Flexible Scheduling</h3>
+                  <p>Adjust your travel dates and plans with ease and minimal fees.</p>
+                </div>
+              </div>
+              
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>24/7 Support</h3>
+                  <p>Our team is always available to assist you during your journey.</p>
+                </div>
+              </div>
+            </div>
+            
+            <button class="btn btn-primary">Learn More <i class="fas fa-chevron-right"></i></button>
+          </div>
+          
+          <div class="about-image">
+            <img src="https://via.placeholder.com/800x600?text=Travel+Planning" alt="Travel planning">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Travelers Say</h2>
+          <p>Hear from people who have experienced our personalized travel services</p>
+        </div>
+        
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="https://via.placeholder.com/100x100?text=S" alt="Sarah Johnson">
+              </div>
+              <div class="testimonial-author">
+                <p class="author-name">Sarah Johnson</p>
+                <p class="author-trip">Bali Trip</p>
+              </div>
+            </div>
+            <p class="testimonial-text">Plan my Voyage created the perfect itinerary for our honeymoon. Every detail was taken care of, and we could just relax and enjoy our special time together.</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="https://via.placeholder.com/100x100?text=M" alt="Michael Chen">
+              </div>
+              <div class="testimonial-author">
+                <p class="author-name">Michael Chen</p>
+                <p class="author-trip">Japan Tour</p>
+              </div>
+            </div>
+            <p class="testimonial-text">The cultural experiences they arranged in Kyoto were authentic and off the beaten path. I felt like I got to see the real Japan, not just tourist attractions.</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="https://via.placeholder.com/100x100?text=E" alt="Emma Rodriguez">
+              </div>
+              <div class="testimonial-author">
+                <p class="author-name">Emma Rodriguez</p>
+                <p class="author-trip">Greek Islands</p>
+              </div>
+            </div>
+            <p class="testimonial-text">Island hopping in Greece was a dream come true! The accommodations were perfect, and the local guides really enhanced our experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Contact us today to begin planning your perfect voyage. Our travel experts are ready to help you create unforgettable memories.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>contact@planmyvoyage.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Travel Street, Adventure City</span>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="destination">Preferred Destination</label>
+              <input type="text" id="destination" placeholder="Where would you like to go?">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Tell us about your dream vacation..."></textarea>
+            </div>
+            
+            <button class="btn btn-primary btn-full">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Plan my Voyage</span>
+        </div>
+        
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        
+        <p class="copyright">
+          © <span id="currentYear"></span> Plan my Voyage. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

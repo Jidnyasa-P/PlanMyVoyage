@@ -19,10 +19,9 @@ Backend: (Specify if using any backend technology)
 <br>
 Data Visualization: Tableau, Excel Dashboards
 <br><br>
-<b>Installation & Setup</b>
-<br>
-1. Clone the repository:
-<bro>
+<b>Installation & Setup</b><br>
+
+1. Clone the repository:<br>
 git clone
 https://github.com/Jidnyasa-P/PlanMyVoyage.git
 <br>

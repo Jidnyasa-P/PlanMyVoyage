@@ -23,15 +23,11 @@ Data Visualization: Tableau, Excel Dashboards
 
 1. Clone the repository:<br>
 git clone
-https://github.com/Jidnyasa-P/PlanMyVoyage.git
-<br>
-2. Navigate to the project folder:
-<br>
-cd PlanMyVoyage
-<br>
-3. Open index.html in your browser to explore the site.
-<br>
-<br>
+https://github.com/Jidnyasa-P/PlanMyVoyage.git<br>
+2. Navigate to the project folder:<br>
+cd PlanMyVoyage<br>
+3. Open index.html in your browser to explore the site.<br><br>
+
 <b>Future Enhancements</b> 🚀
 <br>
 🔹 User authentication for personalized travel planning<br>

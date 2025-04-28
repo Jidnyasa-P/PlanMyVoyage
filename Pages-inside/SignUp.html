@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <title>Plan My Voyage Sign up Form</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      body {
+        color: black;
+        background: #4c535d;
+        font-family: "Roboto", sans-serif;
+      }
+      .form-container {
+        width: 90%;
+        max-width: 400px;
+        margin: 100px auto;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .signup-form {
+        background: #f5f5f5;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      .signup-form h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .signup-form input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      .signup-form button {
+        width: 100%;
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .signup-form button:hover {
+        background: #0056b3;
+      }
+
+      .signup-form p {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .signup-form a {
+        color: #007bff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Plan My Voyage</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SignUp.html">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+    <!-- Container -->
+    <div class="form-container">
+      <!-- Signup Form -->
+      <div class="signup-form" id="signupForm">
+        <form onsubmit="signUp(event)">
+          <h2>Sign Up</h2>
+          <p>It's free and only takes a minute.</p>
+          <hr />
+          <input
+            type="text"
+            placeholder="Username"
+            id="signupUsername"
+            required
+          />
+          <input type="email" placeholder="Email" id="signupEmail" required />
+          <input
+            type="password"
+            placeholder="Password"
+            id="signupPassword"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="signupConfirm"
+            required
+          />
+          <button type="submit">Sign Up</button>
+          <p>
+            Already have an account?
+            <a href="#" onclick="toggleForm('login')">Login here</a>
+          </p>
+        </form>
+      </div>
+
+      <!-- Login Form -->
+      <div class="signup-form" id="loginForm" style="display: none">
+        <form onsubmit="logIn(event)">
+          <h2>Login</h2>
+          <input type="email" placeholder="Email" id="loginEmail" required />
+          <input
+            type="password"
+            placeholder="Password"
+            id="loginPassword"
+            required
+          />
+          <button type="submit">Login</button>
+          <p>
+            Don't have an account?
+            <a href="#" onclick="toggleForm('signup')">Sign up here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div
+      id="welcomeSection"
+      style="display: none; text-align: center; margin-top: 30px"
+    >
+      <h2 id="welcomeMsg">Welcome, traveler!</h2>
+      <button
+        onclick="logOut()"
+        style="
+          padding: 10px 20px;
+          background-color: crimson;
+          color: white;
+          border: none;
+          border-radius: 6px;
+        "
+      >
+        Logout
+      </button>
+    </div>
+
+    <!-- Firebase SDK (Compat Version) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAHmCcWNUdClBWkYUFRAl40E6S7VCK0k6I",
+        authDomain: "plan-my-voyage.firebaseapp.com",
+        projectId: "plan-my-voyage",
+        storageBucket: "plan-my-voyage.firebasestorage.app",
+        messagingSenderId: "65068487176",
+        appId: "1:65068487176:web:4a5d7c5383f621e26537bd",
+        measurementId: "G-BHP3EK5WGS",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const db = firebase.database();
+    </script>
+
+    <script>
+      function toggleForm(type) {
+        document.getElementById("signupForm").style.display =
+          type === "signup" ? "block" : "none";
+        document.getElementById("loginForm").style.display =
+          type === "login" ? "block" : "none";
+      }
+
+      function signUp(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("signupUsername").value;
+        const email = document.getElementById("signupEmail").value;
+        const password = document.getElementById("signupPassword").value;
+        const confirm = document.getElementById("signupConfirm").value;
+
+        if (password !== confirm) {
+          alert("❌ Passwords do not match.");
+          return;
+        }
+
+        auth
+          .createUserWithEmailAndPassword(email, password)
+          .then((cred) => {
+            return db.ref("users/" + cred.user.uid).set({
+              username: name,
+              email: email,
+            });
+          })
+          .then(() => {
+            alert(
+              "✅ Signup successful! You are now logged in. Redirecting..."
+            );
+            window.location.href = "../index.html"; // ✅ redirect to homepage
+          })
+          .catch((err) => {
+            alert("❌ " + err.message);
+          });
+      }
+
+      function logIn(e) {
+		e.preventDefault();
+	  
+		const email = document.getElementById("loginEmail").value;
+		const password = document.getElementById("loginPassword").value;
+	  
+		auth.signInWithEmailAndPassword(email, password)
+		  .then(userCredential => {
+			const user = userCredential.user;
+			document.getElementById("loginForm").style.display = "none";
+			document.getElementById("signupForm").style.display = "none";
+			
+	  
+			// Optional: get the username from the database
+			db.ref("users/" + user.uid).once("value").then(snapshot => {
+			  const username = snapshot.val().username;
+			  document.getElementById("welcomeMsg").innerText = `Welcome, ${username}!`;
+			  document.getElementById("welcomeSection").style.display = "block";
+			});
+			alert("✅ Login successful! Redirecting...");
+			window.location.href = "../index.html"; // ✅ redirect to homepage
+		  })
+		  
+		  .catch(err => {
+			alert("❌ Login failed: " + err.message);
+		  });
+	  }
+	  
+    </script>
+  </body>
+</html>

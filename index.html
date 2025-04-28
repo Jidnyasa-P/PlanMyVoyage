@@ -1,549 +1,1177 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plan my Voyage | Travel & Tourism</title>
-  <meta name="description" content="Discover the world with personalized travel experiences tailored to your preferences.">
-  <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Navigation -->
+<html lang="zxx" class="no-js">
+  <head>
+    <!-- Mobile Specific Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png" />
+    <!-- Author Meta -->
+    <meta name="author" content="" />
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+    <!-- meta character set -->
+    <meta charset="UTF-8" />
+    <!-- Site Title -->
+    <title>Tour India</title>
+    <link rel="icon" href="./img/j.jpg" type="image/jpg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!--CSS============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="css/owl.caro
+			usel.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="protfolio-wrap">
+      <!-- ############################################################################################################### -->
+      <!-- Start Header Area -->
+      <header class="default-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="./img/logo.jpg" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="text-white lnr lnr-menu"></span>
+            </button>
 
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Plan my Voyage</span>
-      </div>
-      <nav class="nav-desktop">
-        <a href="#home">Home</a>
-        <a href="#destinations">Destinations</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="btn btn-primary">Book Now</button>
-      <button class="menu-toggle" id="menuToggle">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </header>
+            <div
+              class="collapse navbar-collapse justify-content-end align-items-center"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li><a href="dashboard.html">Dashboard</a></li>
 
-  <!-- Mobile Navigation -->
-  <div class="mobile-nav" id="mobileNav">
-    <div class="mobile-nav-container">
-      <a href="#home">Home</a>
-      <a href="#destinations">Destinations</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-
-  <main>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container">
-        <div class="hero-content">
-          <h1>Discover the World with Us</h1>
-          <p>Personalized travel experiences tailored to your preferences. Let us plan your perfect voyage.</p>
-          <div class="search-container">
-            <div class="search-row">
-              <div class="search-input">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" placeholder="Where to?">
-              </div>
-              <div class="search-input">
-                <i class="fas fa-calendar"></i>
-                <input type="date" placeholder="When?">
-              </div>
-              <button class="btn btn-primary search-btn">
-                <i class="fas fa-search"></i> Find Your Adventure
-              </button>
+                <li><a href="./Pages-inside/blog.html">Blogs</a></li>
+                <li><a href="#portfolio">Places</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li>
+                  <a href="./Pages-inside/SignUp.html">SignUp</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Destinations -->
-    <section id="destinations" class="destinations">
-      <div class="container">
-        <div class="section-header">
-          <h2>Recommended Destinations</h2>
-          <p>Explore our handpicked selection of breathtaking destinations around the world</p>
-        </div>
-
-        <div class="tabs">
-          <div class="tab-list">
-            <button class="tab-btn active" data-tab="popular">Popular</button>
-            <button class="tab-btn" data-tab="beaches">Beaches</button>
-            <button class="tab-btn" data-tab="mountains">Mountains</button>
-            <button class="tab-btn" data-tab="cities">Cities</button>
-          </div>
-          
-          <div class="tab-content active" id="popular">
-            <div class="destination-grid">
-              <!-- Popular Destinations -->
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Santorini" alt="Santorini">
-                  <div class="destination-badge">Island</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Santorini</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Greece</span>
-                    </div>
-                  </div>
-                  <p>Experience the breathtaking views of white-washed buildings against the blue Aegean Sea.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1299 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Kyoto" alt="Kyoto">
-                  <div class="destination-badge">Cultural</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Kyoto</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Japan</span>
-                    </div>
-                  </div>
-                  <p>Discover ancient temples, traditional gardens, and the beauty of cherry blossoms.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1499 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Bali" alt="Bali">
-                  <div class="destination-badge">Tropical</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Bali</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Indonesia</span>
-                    </div>
-                  </div>
-                  <p>Relax on pristine beaches, explore lush rice terraces, and immerse in Balinese culture.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1099 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="tab-content" id="beaches">
-            <div class="destination-grid">
-              <!-- Beach Destinations -->
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Maldives" alt="Maldives">
-                  <div class="destination-badge">Luxury</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Maldives</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Indian Ocean</span>
-                    </div>
-                  </div>
-                  <p>Crystal clear waters, overwater bungalows, and unparalleled marine life.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1899 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Tulum" alt="Tulum">
-                  <div class="destination-badge">Beach</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Tulum</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Mexico</span>
-                    </div>
-                  </div>
-                  <p>Ancient ruins overlooking pristine beaches with a vibrant local culture.</p>
-                  <div class="destination-footer">
-                    <span class="price">$999 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Amalfi" alt="Amalfi Coast">
-                  <div class="destination-badge">Coastal</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Amalfi Coast</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Italy</span>
-                    </div>
-                  </div>
-                  <p>Dramatic coastline with colorful villages perched on cliffs above the sea.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1399 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="tab-content" id="mountains">
-            <div class="destination-grid">
-              <!-- Mountain Destinations -->
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Swiss+Alps" alt="Swiss Alps">
-                  <div class="destination-badge">Alpine</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Swiss Alps</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Switzerland</span>
-                    </div>
-                  </div>
-                  <p>Majestic mountain peaks, charming villages, and world-class skiing.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1599 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Patagonia" alt="Patagonia">
-                  <div class="destination-badge">Adventure</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Patagonia</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Argentina/Chile</span>
-                    </div>
-                  </div>
-                  <p>Dramatic landscapes with glaciers, mountains, and pristine wilderness.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1799 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Banff" alt="Banff">
-                  <div class="destination-badge">National Park</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Banff</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Canada</span>
-                    </div>
-                  </div>
-                  <p>Stunning mountain scenery with turquoise lakes and abundant wildlife.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1299 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="tab-content" id="cities">
-            <div class="destination-grid">
-              <!-- City Destinations -->
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Paris" alt="Paris">
-                  <div class="destination-badge">Urban</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Paris</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>France</span>
-                    </div>
-                  </div>
-                  <p>The city of lights with iconic landmarks, world-class cuisine, and romantic ambiance.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1199 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=New+York" alt="New York">
-                  <div class="destination-badge">Metropolitan</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>New York</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>USA</span>
-                    </div>
-                  </div>
-                  <p>The city that never sleeps, with skyscrapers, Broadway shows, and diverse neighborhoods.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1299 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <div class="destination-img">
-                  <img src="https://via.placeholder.com/600x400?text=Barcelona" alt="Barcelona">
-                  <div class="destination-badge">Coastal City</div>
-                </div>
-                <div class="destination-info">
-                  <div class="destination-header">
-                    <h3>Barcelona</h3>
-                    <div class="destination-location">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <span>Spain</span>
-                    </div>
-                  </div>
-                  <p>Unique architecture, vibrant street life, and beautiful Mediterranean beaches.</p>
-                  <div class="destination-footer">
-                    <span class="price">$1099 <span class="per-person">/ person</span></span>
-                    <button class="btn btn-outline">Explore <i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-content">
-            <h2>Why Choose Us?</h2>
-            <p>At Plan my Voyage, we believe that travel should be transformative, enriching, and tailored to your unique preferences.</p>
-            
-            <div class="features">
-              <div class="feature">
-                <div class="feature-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="feature-content">
-                  <h3>Personalized Itineraries</h3>
-                  <p>Custom travel plans designed around your interests and preferences.</p>
-                </div>
-              </div>
-              
-              <div class="feature">
-                <div class="feature-icon">
-                  <i class="fas fa-calendar"></i>
-                </div>
-                <div class="feature-content">
-                  <h3>Flexible Scheduling</h3>
-                  <p>Adjust your travel dates and plans with ease and minimal fees.</p>
-                </div>
-              </div>
-              
-              <div class="feature">
-                <div class="feature-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="feature-content">
-                  <h3>24/7 Support</h3>
-                  <p>Our team is always available to assist you during your journey.</p>
-                </div>
-              </div>
-            </div>
-            
-            <button class="btn btn-primary">Learn More <i class="fas fa-chevron-right"></i></button>
-          </div>
-          
-          <div class="about-image">
-            <img src="https://via.placeholder.com/800x600?text=Travel+Planning" alt="Travel planning">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <div class="container">
-        <div class="section-header">
-          <h2>What Our Travelers Say</h2>
-          <p>Hear from people who have experienced our personalized travel services</p>
-        </div>
-        
-        <div class="testimonial-grid">
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <div class="testimonial-avatar">
-                <img src="https://via.placeholder.com/100x100?text=S" alt="Sarah Johnson">
-              </div>
-              <div class="testimonial-author">
-                <p class="author-name">Sarah Johnson</p>
-                <p class="author-trip">Bali Trip</p>
-              </div>
-            </div>
-            <p class="testimonial-text">Plan my Voyage created the perfect itinerary for our honeymoon. Every detail was taken care of, and we could just relax and enjoy our special time together.</p>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <div class="testimonial-avatar">
-                <img src="https://via.placeholder.com/100x100?text=M" alt="Michael Chen">
-              </div>
-              <div class="testimonial-author">
-                <p class="author-name">Michael Chen</p>
-                <p class="author-trip">Japan Tour</p>
-              </div>
-            </div>
-            <p class="testimonial-text">The cultural experiences they arranged in Kyoto were authentic and off the beaten path. I felt like I got to see the real Japan, not just tourist attractions.</p>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <div class="testimonial-avatar">
-                <img src="https://via.placeholder.com/100x100?text=E" alt="Emma Rodriguez">
-              </div>
-              <div class="testimonial-author">
-                <p class="author-name">Emma Rodriguez</p>
-                <p class="author-trip">Greek Islands</p>
-              </div>
-            </div>
-            <p class="testimonial-text">Island hopping in Greece was a dream come true! The accommodations were perfect, and the local guides really enhanced our experience.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h2>Ready to Start Your Journey?</h2>
-            <p>Contact us today to begin planning your perfect voyage. Our travel experts are ready to help you create unforgettable memories.</p>
-            
-            <div class="contact-details">
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>contact@planmyvoyage.com</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+1 (555) 123-4567</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>123 Travel Street, Adventure City</span>
-              </div>
-            </div>
-            
-            <div class="social-links">
-              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
-          
-          <div class="contact-form">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Your email">
-              </div>
-            </div>
-            
-            <div class="form-group">
-              <label for="destination">Preferred Destination</label>
-              <input type="text" id="destination" placeholder="Where would you like to go?">
-            </div>
-            
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" placeholder="Tell us about your dream vacation..."></textarea>
-            </div>
-            
-            <button class="btn btn-primary btn-full">Send Message</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Plan my Voyage</span>
-        </div>
-        
-        <nav class="footer-nav">
-          <a href="#home">Home</a>
-          <a href="#destinations">Destinations</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
         </nav>
-        
-        <p class="copyright">
-          © <span id="currentYear"></span> Plan my Voyage. All rights reserved.
-        </p>
+      </header>
+
+      <!-- End Header Area -->
+      <div style="margin-top: 7rem"></div>
+
+      <!-- carousel -->
+      <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+          <div class="item">
+            <img src="img/1.jpeg" />
+            <div class="content">
+              <div class="title">Journey Beyond Maps</div>
+              <div class="topic">Discover Untouched Landscapes</div>
+              <div class="des">
+                Set foot where nature paints its own masterpiece. Unveil hidden
+                paths and breathe in moments only wanderers witness.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/2.jpeg" />
+            <div class="content">
+              <div class="title">Stairs to Stillness</div>
+              <div class="topic">Mountainside Sanctuaries</div>
+              <div class="des">
+                Step into harmony where tradition meets the hills. A sacred
+                retreat suspended between earth and sky.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/3.jpeg" />
+            <div class="content">
+              <div class="title">Lakeside Reflections</div>
+              <div class="topic">Scenic Retreats</div>
+              <div class="des">
+                Let your soul mirror the calm of crystal waters — where every
+                ripple carries a memory worth keeping.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/4.jpeg" />
+            <div class="content">
+              <div class="title">The Edge of Adventure</div>
+              <div class="topic">High-Altitude Escapes</div>
+              <div class="des">
+                Feel the thrill of summits that challenge you — raw, bold, and
+                breathtaking. Here, silence is your guide.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/5.jpeg" />
+            <div class="content">
+              <div class="title">Walk with Giants</div>
+              <div class="topic">Canyon Chronicles</div>
+              <div class="des">
+                Wander among nature's giants where deep gorges guard ancient
+                whispers and golden light guides your path.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/6.jpeg" />
+            <div class="content">
+              <div class="title">Sunset by the Shores</div>
+              <div class="topic">Coastal Serenity</div>
+              <div class="des">
+                Let the ocean waves whisper stories while golden skies melt into
+                the sea — your escape to coastal calm.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/7.jpeg" />
+            <div class="content">
+              <div class="title">Dance of the Skies</div>
+              <div class="topic">Hot Air Horizon</div>
+              <div class="des">
+                Rise above the ordinary. Soar through clouds and colors where
+                land stretches like a storybook.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/8.jpeg" />
+            <div class="content">
+              <div class="title">Steps Through Time</div>
+              <div class="topic">Monumental Heritage</div>
+              <div class="des">
+                Climb through tales carved in stone. Every step takes you deeper
+                into the echoes of lost empires.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/9.jpeg" />
+            <div class="content">
+              <div class="title">Beyond Borders</div>
+              <div class="topic">Global Footprints</div>
+              <div class="des">
+                Travel isn't just about places — it's about perspectives. Chase
+                moments that change you forever.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/10.jpeg" />
+            <div class="content">
+              <div class="title">Lost in Blue</div>
+              <div class="topic">Ocean Getaways</div>
+              <div class="des">
+                Drift across turquoise dreams. Where boats float, worries
+                disappear, and time gently halts.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/11.jpeg" />
+            <div class="content">
+              <div class="title">Arches of Awe</div>
+              <div class="topic">Architectural Wonders</div>
+              <div class="des">
+                Walk through ancient craftsmanship where culture speaks through
+                carvings. These corridors echo centuries of legacy.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/12.jpeg" />
+            <div class="content">
+              <div class="title">Sky Meets Stone</div>
+              <div class="topic">Historic Heights</div>
+              <div class="des">
+                Explore the cliffside marvels that whisper tales of the past —
+                where earth’s scars turn into wonders.
+              </div>
+              <div class="buttons">
+                <button><a href="#portfolio">EXPLORE</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+          <div class="item">
+            <img src="img/1.jpeg" />
+            <div class="content">
+              <div class="title">Journey Beyond Maps</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/2.jpeg" />
+            <div class="content">
+              <div class="title">Stairs to Stillness</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/3.jpeg" />
+            <div class="content">
+              <div class="title">Lakeside Reflections</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/4.jpeg" />
+            <div class="content">
+              <div class="title">The Edge of Adventure</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/5.jpeg" />
+            <div class="content">
+              <div class="title">Walk with Giants</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/6.jpeg" />
+            <div class="content">
+              <div class="title">Sunset by the Shores</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/7.jpeg" />
+            <div class="content">
+              <div class="title">Dance of the Skies</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/8.jpeg" />
+            <div class="content">
+              <div class="title">Steps Through Time</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/9.jpeg" />
+            <div class="content">
+              <div class="title">Beyond Borders</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/10.jpeg" />
+            <div class="content">
+              <div class="title">Lost in Blue</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/11.jpeg" />
+            <div class="content">
+              <div class="title">Arches of Awe</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/12.jpeg" />
+            <div class="content">
+              <div class="title">Sky Meets Stone</div>
+            </div>
+          </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+      </div>
+
+      <!-- End carousel -->
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin: 30px 0;
+        "
+      >
+        <div
+          class="tableauPlaceholder"
+          id="viz1745077855956"
+          style="position: relative"
+        >
+          <noscript
+            ><a href="#"
+              ><img
+                alt="Story 2 "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;43&#47;432KWY8JS&#47;1_rss.png"
+                style="border: none" /></a></noscript
+          ><object class="tableauViz" style="display: none">
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="path" value="shared&#47;432KWY8JS" />
+            <param name="toolbar" value="yes" />
+            <param
+              name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;43&#47;432KWY8JS&#47;1.png"
+            />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+          </object>
+        </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1745077855956");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "1050px";
+          vizElement.style.height = "991px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+      <!-- dashboards adding here -->
+      <h2 style="margin-top: 5rem; text-align: center; color: #333">
+        Explore Our Travel Dashboards
+      </h2>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin: 30px 0;
+        "
+      >
+        <a
+          href="dashboard2.html"
+          style="
+            padding: 15px 25px;
+            font-size: 1rem;
+            color: #fff;
+            background: #2d89ef;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+          "
+          onmouseover="this.style.background='#1e5dbd'; this.style.transform='scale(1.05)'"
+          onmouseout="this.style.background='#2d89ef'; this.style.transform='scale(1)'"
+        >
+          Find Your Next Holiday Destination
+        </a>
+
+        <a
+          href="dashboard1.html"
+          style="
+            padding: 15px 25px;
+            font-size: 1rem;
+            color: #fff;
+            background: #2d89ef;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+          "
+          onmouseover="this.style.background='#1e5dbd'; this.style.transform='scale(1.05)'"
+          onmouseout="this.style.background='#2d89ef'; this.style.transform='scale(1)'"
+        >
+          Where Should You Travel Next?
+        </a>
+
+        <a
+          href="flight.html"
+          style="
+            padding: 15px 25px;
+            font-size: 1rem;
+            color: #fff;
+            background: #2d89ef;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+          "
+          onmouseover="this.style.background='#1e5dbd'; this.style.transform='scale(1.05)'"
+          onmouseout="this.style.background='#2d89ef'; this.style.transform='scale(1)'"
+        >
+          Choose Your next Flight !
+        </a>
+      </div>
+      <!-- Start portfolio-area Area -->
+      <section class="portfolio-area section-gap" id="portfolio">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="menu-content col-lg-10">
+              <div class="title text-center">
+                <h1 class="mb-10">Popular Places to Visit</h1>
+                <p>Explore from around the globe !</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="filters">
+            <ul>
+              <li class="active" data-filter="*">All</li>
+              <li data-filter=".corporate">Northern</li>
+              <li data-filter=".personal">Southern</li>
+              <li data-filter=".agency">Eastern</li>
+              <li data-filter=".portal">Western</li>
+            </ul>
+          </div>
+
+          <div class="filters-content">
+            <div class="row grid">
+              <div class="single-portfolio col-sm-4 all corporate">
+                <div class="item">
+                  <img src="img/london.jpeg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>London</h4>
+                    <div class="cat">United Kingdom</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all personal">
+                <div class="item">
+                  <img src="img/Queenstown-New-Zealand.webp" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>Queenstown</h4>
+                    <div class="cat">New Zealand</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all personal">
+                <div class="item">
+                  <img src="img/argentina.jpeg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>Buenos Aires</h4>
+                    <div class="cat">Argentina</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all agency">
+                <div class="item">
+                  <img src="img/china-beijing.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Beijing</h5>
+                    <div class="cat">China</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all agency">
+                <div class="item">
+                  <img src="img/tokyo.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Tokyo</h5>
+                    <div class="cat">Japan</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all agency">
+                <div class="item">
+                  <img src="img/philippines.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Manila</h5>
+                    <div class="cat">Philippines</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all portal">
+                <div class="item">
+                  <img src="img/new-york.avif" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>New York</h5>
+                    <div class="cat">USA</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="single-portfolio col-sm-4 all corporate">
+                <div class="item">
+                  <img src="img/iceland.jpeg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>Reykjavik</h4>
+                    <div class="cat">Iceland</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all personal">
+                <div class="item">
+                  <img src="img/south africa.jpeg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>Cape Town</h4>
+                    <div class="cat">South Africa</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all agency">
+                <div class="item">
+                  <img src="img/Seoul-South-Korea.webp" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Seoul</h5>
+                    <div class="cat">South Korea</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all portal">
+                <div class="item">
+                  <img src="img/cancun-shoreline-mexico.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Cancun-shoreline</h5>
+                    <div class="cat">Mexico</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all corporate">
+                <div class="item">
+                  <img src="img/Finland_Helsinki_Church_1.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>Helsinki</h4>
+                    <div class="cat">Finland</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all personal">
+                <div class="item">
+                  <img src="img/brazil.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>Rio de Janerio</h4>
+                    <div class="cat">Brazil</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all personal">
+                <div class="item">
+                  <img src="img/Santiago-chile.webp" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>Santiago</h4>
+                    <div class="cat">Chile</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all personal">
+                <div class="item">
+                  <img src="img/sydney.jpeg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>Sydney</h4>
+                    <div class="cat">Australia</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all personal">
+                <div class="item">
+                  <img src="img/antananarivo.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h4>Antananarivo</h4>
+                    <div class="cat">Madagascar</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all agency">
+                <div class="item">
+                  <img src="img/vietnam halong.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Halong</h5>
+                    <div class="cat">Vietnam</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all portal">
+                <div class="item">
+                  <img src="img/rome.jpeg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Rome</h5>
+                    <div class="cat">Italy</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all portal">
+                <div class="item">
+                  <img src="img/-lisbon-portugal-.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Lisbon</h5>
+                    <div class="cat">Portugal</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all portal">
+                <div class="item">
+                  <img src="img/barcelona city.jpeg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Barcelona</h5>
+                    <div class="cat">Spain</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-portfolio col-sm-4 all portal">
+                <div class="item">
+                  <img src="img/amsterdam Nederland.jpg" alt="Work 1" />
+                  <div class="p-inner">
+                    <h5>Amsterdam</h5>
+                    <div class="cat">Neterland</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End portfolio-area Area -->
+
+      <!-- Start service Area -->
+      <section class="service-area section-gap relative" id="service">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-10">
+              <div class="title text-center">
+                <h1 class="mb-10 text-white">Always in our customer Favour</h1>
+                <p>Who are always with tight Budget</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End service Area -->
+
+      <!-- Start services Area -->
+      <section class="services-area pb-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="single-service">
+                <img class="img-fluid" src="img/s1.png" alt="" />
+                <h4>Ammenties Selection</h4>
+                <p>
+                  It's totaly on you what you want and what you want to let it
+                  go on Hotel Selection process.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single-service">
+                <img class="img-fluid" src="img/s2.png" alt="" />
+                <h4>Visa Ready</h4>
+                <p>
+                  Just 32 Hours - What it takes get your Visa Ready and other
+                  documentation necessary for travel.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single-service">
+                <img class="img-fluid" src="img/s3.png" alt="" />
+                <h4>Personalized Travel Plans</h4>
+                <p>
+                  We have wide Varieties of Hotel &amp; Resorts to accomodate
+                  you. 3D4N or 15D16N totally upto you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End services Area -->
+
+      <!-- Start review Area -->
+      <section class="review-area section-gap" id="testimonial">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-10">
+              <div class="title text-center">
+                <h1 class="mb-10">How Our Customers felt for Us</h1>
+                <p>
+                  Who are in extreme love with friendly &amp; inviting people
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="single-review">
+                <img src="img/c1.png" alt="" />
+                <div class="title d-flex flex-row">
+                  <a href="#"><h4>Fannie Rowe</h4></a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+                <p>
+                  It was a life Experience to visit such a beautiful cultural
+                  country.
+                </p>
+              </div>
+              <div class="single-review">
+                <img src="img/c3.png" alt="" />
+                <div class="title d-flex flex-row">
+                  <a href="#"><h4>Lillie Summers</h4></a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+                <p>Just one Word - Incredible!</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="single-review">
+                <img src="img/c2.png" alt="" />
+                <div class="title d-flex flex-row">
+                  <a href="#"><h4>Bob Marley</h4></a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-starchecked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+                <p>Damm! I'm thinking of staying here in this World.</p>
+              </div>
+              <div class="single-review">
+                <img src="img/c4.png" alt="" />
+                <div class="title d-flex flex-row">
+                  <a href="#"><h4>Jackie Chan</h4></a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+                <p>
+                  Now, I am big fan of Power Yoga. Thanks for such a gift to
+                  this world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End review Area -->
+
+      <!-- start footer Area -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-col logo-col">
+            <h2 class="footer-logo">🌍 PlanMyVoyage</h2>
+            <p>Your global travel guide to unforgettable experiences.</p>
+          </div>
+
+          <div class="footer-col">
+            <h3 style="font-weight: 1rem; color: white">Explore</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./Pages-inside/blog.html">Blog</a></li>
+              <li><a href="flight.html">Flight</a></li>
+              <li><a href="dashboard.html">Dashboards</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 style="font-weight: 1rem; color: white">Support</h3>
+            <ul>
+              <li><a href="./Pages-inside/About.html">About Us</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 style="font-weight: 1rem; color: white">Connect</h3>
+            <p>Email: support@planmyvoyage.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">© 2025 PlanMyVoyage. All rights reserved.</p>
+      </footer>
+      <!-- End footer Area -->
+    </div>
+    <!-- Chatbot Icon -->
+    <div
+      id="chatbotIcon"
+      onclick="toggleChat()"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 9999;
+      "
+    >
+      <img
+        src="img/chatbot.avif"
+        alt="Chatbot"
+        width="60"
+        height="60"
+        style="border-radius: 50%; box-shadow: 0px 0px 10px #aaa"
+      />
+    </div>
+
+    <!-- Chatbot Window -->
+    <div
+      id="chatbotWindow"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        width: 320px;
+        height: 450px;
+        background: white;
+        border: 2px solid #007bff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        z-index: 9999;
+      "
+    >
+      <div
+        style="
+          background: #007bff;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          font-weight: bold;
+        "
+      >
+        Travel Bot
+        <span onclick="toggleChat()" style="float: right; cursor: pointer"
+          >&times;</span
+        >
+      </div>
+      <div
+        id="chatContent"
+        style="padding: 10px; height: 290px; overflow-y: auto; font-size: 14px"
+      ></div>
+      <div
+        style="
+          padding: 10px;
+          border-top: 1px solid #ccc;
+          overflow-y: auto;
+          max-height: 120px;
+        "
+      >
+        <div id="botOptions"></div>
       </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script>
+      let currentStep = "start";
+
+      const botResponses = {
+        start: {
+          message: "👋 Hello! What would you like help with today?",
+          options: [
+            "Trip Suggestions",
+            "Hotel Recommendations",
+            "Flight Assistance",
+            "Tourist Places",
+            "Visa Information",
+          ],
+        },
+        "Trip Suggestions": {
+          message: "✈️ What type of trip are you planning?",
+          options: [
+            "City Adventure",
+            "Beach Vacation",
+            "Mountain Getaway",
+            "Countryside Escape",
+            "Desert Adventure",
+          ],
+        },
+        "City Adventure": {
+          message:
+            "🏙️ Explore Paris, Tokyo, New York, London, Dubai, or Singapore!",
+        },
+        "Beach Vacation": {
+          message:
+            "🏖️ Relax in Bali, Maldives, Santorini, Seychelles, Phuket, or Bora Bora.",
+        },
+        "Mountain Getaway": {
+          message:
+            "🏔️ Adventure awaits at Swiss Alps, Rocky Mountains, Andes, Mount Fuji, and Himalayas.",
+        },
+        "Countryside Escape": {
+          message:
+            "🌾 Wander through Tuscany, Provence, or New Zealand’s South Island.",
+        },
+        "Desert Adventure": {
+          message:
+            "🏜️ Experience Sahara Desert, Dubai Safari, or Atacama Desert.",
+        },
+        "Hotel Recommendations": {
+          message: "🏨 Choose the type of hotel you prefer:",
+          options: [
+            "Luxury Hotels",
+            "Budget Hotels",
+            "Boutique Hotels",
+            "Family Resorts",
+            "Eco-friendly Hotels",
+          ],
+        },
+        "Luxury Hotels": {
+          message:
+            "🌟 Stay at Ritz Paris, Burj Al Arab, Taj Lake Palace, or Waldorf Astoria Beverly Hills.",
+        },
+        "Budget Hotels": {
+          message:
+            "💰 Great budget choices include ibis, Premier Inn, OYO, or Holiday Inn.",
+        },
+        "Boutique Hotels": {
+          message:
+            "🎨 Boutique stays like The Library Koh Samui, 21c Museum Hotel, and Giraffe Manor Nairobi.",
+        },
+        "Family Resorts": {
+          message:
+            "👨‍👩‍👧‍👦 Family favorites are Atlantis Dubai, Disney's Grand Floridian Orlando.",
+        },
+        "Eco-friendly Hotels": {
+          message:
+            "🌱 Stay sustainable at Six Senses Fiji or Soneva Fushi Maldives.",
+        },
+        "Flight Assistance": {
+          message: "🛫 What are you looking for?",
+          options: [
+            "Cheap Flights",
+            "Business Class Deals",
+            "Last-Minute Flights",
+          ],
+        },
+        "Cheap Flights": {
+          message:
+            "🔎 Find great deals on Skyscanner, Kayak, Hopper, Momondo, or Google Flights.",
+        },
+        "Business Class Deals": {
+          message:
+            "💼 Business deals available via Qatar Airways, Emirates, or Singapore Airlines.",
+        },
+        "Last-Minute Flights": {
+          message:
+            "⏰ Use Expedia Last Minute, Priceline Express Deals, or Hopper App for fast bookings.",
+        },
+        "Tourist Places": {
+          message: "🗺️ What type of attraction do you want to explore?",
+          options: [
+            "World Wonders",
+            "Natural Wonders",
+            "Modern Cities",
+            "Historical Cities",
+            "Adventure Destinations",
+          ],
+        },
+        "World Wonders": {
+          message:
+            "🏛️ Discover Taj Mahal, Christ the Redeemer, or Chichen Itza!",
+        },
+        "Natural Wonders": {
+          message: "🌍 See the Grand Canyon, Northern Lights, Victoria Falls.",
+        },
+        "Modern Cities": {
+          message: "🌆 Experience Dubai, New York, Singapore, Hong Kong.",
+        },
+        "Historical Cities": {
+          message: "🏰 Travel to Rome, Athens, Cairo, Jerusalem.",
+        },
+        "Adventure Destinations": {
+          message: "🧗 Adventure awaits in Queenstown, Banff, or Patagonia.",
+        },
+        "Visa Information": {
+          message: "📑 Which visa help do you need?",
+          options: [
+            "Schengen Visa",
+            "USA Visa",
+            "Asia Tourist Visa",
+            "Australia eVisa",
+            "Canada ETA",
+          ],
+        },
+        "Schengen Visa": {
+          message:
+            "🇪🇺 Apply 3 months before your trip at your nearest embassy.",
+        },
+        "USA Visa": {
+          message: "🇺🇸 Fill DS-160 form, schedule an interview, and pay fees.",
+        },
+        "Asia Tourist Visa": {
+          message:
+            "🌏 Easy visas available for Thailand, Vietnam, Nepal upon arrival or eVisa.",
+        },
+        "Australia eVisa": {
+          message:
+            "🇦🇺 Apply online for Australia visitor visa (approval within 48 hours).",
+        },
+        "Canada ETA": {
+          message: "🇨🇦 Get online approval for short-term trips to Canada.",
+        },
+      };
+
+      function toggleChat() {
+        const chat = document.getElementById("chatbotWindow");
+        chat.style.display =
+          chat.style.display === "none" || chat.style.display === ""
+            ? "block"
+            : "none";
+        if (currentStep === "start") {
+          showBotMessage(
+            botResponses.start.message,
+            botResponses.start.options
+          );
+        }
+      }
+
+      function showBotMessage(message, options = []) {
+        const chatContent = document.getElementById("chatContent");
+        const botDiv = document.createElement("div");
+        botDiv.style.marginBottom = "10px";
+        botDiv.innerHTML = `<div style="background: #eee; padding: 8px; border-radius: 12px; display: inline-block;">${message}</div>`;
+        chatContent.appendChild(botDiv);
+        chatContent.scrollTop = chatContent.scrollHeight;
+
+        const botOptions = document.getElementById("botOptions");
+        botOptions.innerHTML = "";
+        if (options.length > 0) {
+          options.forEach((option) => {
+            const btn = document.createElement("button");
+            btn.innerText = option;
+            btn.style.margin = "5px";
+            btn.style.padding = "5px 10px";
+            btn.style.background = "#007bff";
+            btn.style.color = "white";
+            btn.style.border = "none";
+            btn.style.borderRadius = "6px";
+            btn.style.cursor = "pointer";
+            btn.onclick = () => userSelect(option);
+            botOptions.appendChild(btn);
+          });
+        }
+      }
+
+      function userSelect(option) {
+        const chatContent = document.getElementById("chatContent");
+        const userDiv = document.createElement("div");
+        userDiv.style.textAlign = "right";
+        userDiv.style.marginBottom = "10px";
+        userDiv.innerHTML = `<div style="background: #007bff; color: white; padding: 8px; border-radius: 12px; display: inline-block;">${option}</div>`;
+        chatContent.appendChild(userDiv);
+        chatContent.scrollTop = chatContent.scrollHeight;
+
+        if (botResponses[option]) {
+          if (botResponses[option].options) {
+            currentStep = option;
+            showBotMessage(
+              botResponses[option].message,
+              botResponses[option].options
+            );
+          } else {
+            showBotMessage(botResponses[option].message, []);
+            setTimeout(() => {
+              currentStep = "start";
+              showBotMessage(
+                botResponses.start.message,
+                botResponses.start.options
+              );
+            }, 2000);
+          }
+        }
+      }
+    </script>
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
